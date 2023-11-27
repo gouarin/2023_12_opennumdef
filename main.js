@@ -9,11 +9,14 @@ import Reveal from 'reveal.js'
 import Markdown from 'reveal.js/plugin/markdown/markdown.esm.js'
 import RevealHighlight from 'reveal.js/plugin/highlight/highlight.js'
 import RevealMath from 'reveal.js/plugin/math/math.js'
-import RevealMenu from './plugin.js'
+// import RevealMenu from './plugin.js'
+import RevealMenu from 'reveal.js-menu/plugin.js'
+
+var url = "2023_12_01_opennumdef";
 
 function get_theme_ext(href)
 {
-  if (href == "/talk_opennumdef_july_2023/theme/dark.css")
+  if (href == `/${url}/theme/dark.css`)
   {
     return "dark";
   }
@@ -58,8 +61,8 @@ deck.initialize({
   menu: {
     themes: true,
     themes: [
-      {name: 'dark', theme: '/talk_opennumdef_july_2023/theme/dark.css'},
-      {name: 'light', theme: '/talk_opennumdef_july_2023/theme/light.css'}
+      {name: 'dark', theme: `/${url}/theme/dark.css`},
+      {name: 'light', theme: `/${url}/theme/light.css`}
     ],
     path: 'theme',
   },
