@@ -415,15 +415,6 @@ set([&](const auto& i, auto)
                 \frac{\partial u}{\partial t} - \Delta u =
                 0
                 $$
-                with the initial condition
-                $$
-                u(., 0) = e^{-50x^2} \quad \text{for} \: x \in [0, 1[.
-                $$
-                And we use the upwind scheme
-                $$
-                \frac{u^{n+1}_i - u^n_i}{\Delta t} + a \frac{u^{n}_i -
-                u^n_{i-1}}{\Delta x} = 0.
-                $$
               </div>
             </div>
           </section>
@@ -588,6 +579,7 @@ for(std::size_t ite=0; ite&lt;200; ++ite)
                 <li>Load balancing using diffusion algorithm or space filling
                   curve</li>
                 <li>GPU support</li>
+                <li>IO optimization and compression</li>
               </ul>
             </div>
           </div>
